@@ -24,3 +24,17 @@ For a sample extension to start with, check out my [Creative Cloud Extension boi
 
 For extensions to run, you should first run `setdebugmode.sh` (mac) or `setdebugmode.bat` (win) once properly configure your system for extension development. Otherwise, extensions will refuse to launch.
 `disabledebugmode.sh` reverts to the default behavior. Windows users should update the CEP registry key manually.
+
+###execextendscript
+
+This shell script can be used to execute an ExtendScript file in Photoshop, Illustrator, or InDesign on a mac via command line. Unfortunately, there is no windows equivalent for now.
+
+Usage:
+
+`execextendscript <application> <filepath>`
+
+Parameters:
+
+* `application`: "ps" (Photoshop CC), "ai" (Illustrator CC) or "id" (InDesign CC)
+* `filepath`: file path of the JSX file to be executed.
+
