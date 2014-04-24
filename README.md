@@ -1,7 +1,9 @@
-#Creative Cloud Extensions CLI
+#Creative Cloud Extension SDK
 
 
-Command line tools for building HTML based extensions for Adobe Creative Cloud applications.
+Unofficial SDK for building HTML based extensions for Adobe Creative Cloud applications.
+As of now, it consists of some command line tool / scripts and some templates.
+
  
 ###createext 
 
@@ -12,7 +14,7 @@ Usage (mac): `createext.sh templatename extid`
 * `templatename` the name of the template folder you wish to use as a source
 * `extid` a unique id for your extension
 
-Example: `createext.sh basic com.example.ext`  ... will create the extension *com.example.ext* from the `basic` template folder in the `templates` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
+Example: `createext.sh basic com.example.ext`  ... will create the extension *com.example.ext* from the `default` template folder in the `templates` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
 
 You can of course add your own templates to the `templates` folder.
 
