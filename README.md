@@ -3,6 +3,20 @@
 
 Command line tools for building HTML based extensions for Adobe Creative Cloud applications.
  
+###createext 
+
+Creates an extension panel from a given template.
+
+Usage (mac): `createext.sh templatename extid`
+
+* `templatename` the name of the template folder you wish to use as a source
+* `extid` a unique id for your extension
+
+Example: `createext.sh basic com.example.ext`  ... will create the extension *com.example.ext* from the `basic` template folder in the `templates` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
+
+You can of course add your own templates to the `templates` folder.
+
+
 ###deployext
 
 Copies the extension template to the appropriate location. 
@@ -22,7 +36,7 @@ For a sample extension to start with, check out my [Creative Cloud Extension boi
 
 ###setdebugmode and disabledebugmode
 
-For extensions to run, you should first run `setdebugmode.sh` (mac) or `setdebugmode.bat` (win) once properly configure your system for extension development. Otherwise, extensions will refuse to launch.
+For extensions to run, you should first run `setdebugmode.sh` (mac) or `setdebugmode.bat` (win) once to properly configure your system for extension development. Otherwise, extensions will refuse to launch.
 `disabledebugmode.sh` reverts to the default behavior. Windows users should update the CEP registry key manually.
 
 ###execextendscript
