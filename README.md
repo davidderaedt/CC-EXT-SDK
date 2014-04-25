@@ -5,19 +5,22 @@ Unofficial SDK for building HTML based extensions for Adobe Creative Cloud appli
 As of now, it consists of some command line tool / scripts and some templates.
 
 
-
-
  
 ###createext 
 
 Creates an extension panel from a given template and deploys it.
 
-Usage (mac): `createext.sh templatename extid`
+Usage: 
+
+* osx: `createext.sh templatename extid`
+* win: `createext.bat templatename extid`
+
+Parameters:
 
 * `templatename` the name of the template folder you wish to use as a source
 * `extid` a unique id for your extension
 
-Returns the created folder path.
+Returns: the path of the created folder.
 
 Example: `createext.sh default com.example.ext`  ... will create the extension *com.example.ext* from the `default` template located in the `templates/default` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
 
@@ -28,11 +31,18 @@ You can of course add your own templates to the `templates` folder.
 
 Copies an existing extension folder to the appropriate location for it to be executed.
 
-Usage (mac): `deployext.sh extfolder extid`
-Usage (win): `deployext.bat extfolder extid`
+Usage:
+
+* osx : `deployext.sh extfolder extid`
+* win : `deployext.bat extfolder extid`
+
+Parameters:
 
 * `extfolder` the location of the extension folder you wish to deploy
 * `extid` the extension unique id (ie `com.example.my_ext`)
+
+Returns: the path of the created folder.
+
 
 Example: To deploy an extension located at `~/my-awesome-ext/` with the ID `com.example.awesome-ext`, run:
 
@@ -50,9 +60,7 @@ For extensions to run, you should first run `setdebugmode.sh` (mac) or `setdebug
 
 This shell script can be used to execute an ExtendScript file in Photoshop, Illustrator, or InDesign on a mac via command line. Unfortunately, there is no windows equivalent for now.
 
-Usage:
-
-`execextendscript <application> <filepath>`
+Usage (osx): `execextendscript <application> <filepath>`
 
 Parameters:
 
