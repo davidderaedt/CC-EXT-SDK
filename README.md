@@ -4,27 +4,32 @@
 Unofficial SDK for building HTML based extensions for Adobe Creative Cloud applications.
 As of now, it consists of some command line tool / scripts and some templates.
 
+
+
+
  
 ###createext 
 
-Creates an extension panel from a given template.
+Creates an extension panel from a given template and deploys it.
 
 Usage (mac): `createext.sh templatename extid`
 
 * `templatename` the name of the template folder you wish to use as a source
 * `extid` a unique id for your extension
 
-Example: `createext.sh basic com.example.ext`  ... will create the extension *com.example.ext* from the `default` template folder in the `templates` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
+Returns the created folder path.
+
+Example: `createext.sh default com.example.ext`  ... will create the extension *com.example.ext* from the `default` template located in the `templates/default` folder. The extension panel should be ready to use from the corresponding Adobe application as long as you've enable debugging on the system (see the `debugmode` commands below).
 
 You can of course add your own templates to the `templates` folder.
 
 
 ###deployext
 
-Copies the extension template to the appropriate location. 
+Copies an existing extension folder to the appropriate location for it to be executed.
 
-Usage (mac): `deployext.sh extfolder extid` 
-Usage (win): `deployext.bat extfolder extid` 
+Usage (mac): `deployext.sh extfolder extid`
+Usage (win): `deployext.bat extfolder extid`
 
 * `extfolder` the location of the extension folder you wish to deploy
 * `extid` the extension unique id (ie `com.example.my_ext`)
