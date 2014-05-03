@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.example.my_standard_ext" ExtensionBundleVersion="1.0.0"
-		ExtensionBundleName="Standard Extension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.example.ext" ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="Extension-Name" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.example.my_standard_ext" Version="1.0" />
+		<Extension Id="com.example.ext" Version="1.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
@@ -32,7 +32,7 @@
 		</RequiredRuntimeList>
 	</ExecutionEnvironment>
 	<DispatchInfoList>
-		<Extension Id="com.example.my_standard_ext">
+		<Extension Id="com.example.ext">
 			<DispatchInfo >
 				<Resources>
 				<MainPath>./index.html</MainPath>
@@ -43,7 +43,7 @@
 				</Lifecycle>
 				<UI>
 					<Type>Panel</Type>
-					<Menu>Standard Extension</Menu>
+					<Menu>Extension-Name</Menu>
 					<Geometry>
 						<Size>
 							<Height>300</Height>
