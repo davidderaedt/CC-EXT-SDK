@@ -1,10 +1,9 @@
 #Creative Cloud Extension SDK
 
-(THIS IS THE CEP5 BRANCH)
-
 Unofficial SDK for building HTML based extensions for Adobe Creative Cloud applications.
 As of now, it consists of some command line tool / scripts and some templates.
 
+    This is the CEP5 branch of the SDK, meant to replace the current (CEP4) version of the SDK when the next major version of Creative Cloud application is available.
 
  
 ###createext 
