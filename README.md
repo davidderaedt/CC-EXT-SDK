@@ -48,7 +48,7 @@ Example: To deploy an extension located at `~/my-awesome-ext/` with the ID `com.
 
 `deployext.sh ~/my-awesome-ext/ com.example.awesome-ext`
 
-For a sample extension to start with, check out my [Creative Cloud Extension boilerplate](https://github.com/davidderaedt/ccext-boilerplate).
+For a sample extension to start with, check out the official samples repository (https://github.com/Adobe-CEP/Samples).
 
 
 ###setdebugmode and disabledebugmode
