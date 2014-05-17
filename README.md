@@ -4,7 +4,7 @@
 Unofficial SDK for building HTML based extensions for Adobe Creative Cloud applications.
 As of now, it consists of some command line tool / scripts and some templates.
 
-
+*If you're looking for an easier way to build HTML extensions, check out the [Sublime Text plugin](https://github.com/davidderaedt/CC-Extension-Builder-for-Sublime-Text) or the [Brackets plugin](https://github.com/davidderaedt/CC-Extension-Builder-for-Brackets), both built on top of this SDK.*
  
 ###createext 
 
