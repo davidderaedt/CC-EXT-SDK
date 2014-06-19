@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASEDIR=$(dirname "$0")
-CEPDIR=CEPServiceManager4
+CEPDIR=CEP
 EXTDIR=~/Library/Application\ Support/Adobe/$CEPDIR/extensions
 
 #create extensions folder if does not exist
