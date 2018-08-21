@@ -1,11 +1,11 @@
-#Creative Cloud Extension SDK
+# Creative Cloud Extension SDK
 
 
 Unofficial SDK for building HTML based extensions for Adobe Creative Cloud applications. As of now, it consists of some command line tools, scripts and some templates.
 
-*If you're looking for an easier way to build HTML extensions, check out the [Sublime Text plugin](https://github.com/davidderaedt/CC-Extension-Builder-for-Sublime-Text) or the [Brackets extension](https://github.com/davidderaedt/CC-Extension-Builder-for-Brackets), both built on top of this SDK.*
+> If you're looking for an easier way to build HTML extensions, check out the [Sublime Text plugin](https://github.com/davidderaedt/CC-Extension-Builder-for-Sublime-Text) or the [Brackets extension](https://github.com/davidderaedt/CC-Extension-Builder-for-Brackets), both built on top of this SDK.
  
-###createext 
+### createext 
 
 Creates an extension panel from a given template and deploys it.
 
@@ -33,7 +33,7 @@ For additional extension samples, check out the [official samples repository](ht
 
 
 
-###deployext
+### deployext
 
 Copies an existing extension folder to the appropriate location for it to be executed.
 
@@ -57,13 +57,13 @@ Example: To deploy an extension located at `~/my-awesome-ext/` with the ID `com.
 For a sample extension to start with, check out the [official samples repository](https://github.com/Adobe-CEP/Samples).
 
 
-###setdebugmode and disabledebugmode
+### setdebugmode and disabledebugmode
 
 For extensions to run, you should first run `setdebugmode.sh` (mac) or `setdebugmode.bat` (win) once to properly configure your system for extension development. Otherwise, extensions will refuse to launch.
 `disabledebugmode.sh` reverts to the default behavior. Windows users should update the CEP registry key manually.
 
 
-###execextendscript
+### execextendscript
 
 This script executes an ExtendScript (jsx) file via command line in Photoshop, Illustrator, InDesign, or After Effects. Unfortunately, InDesign scripts are not supported on Windows for now.
 
